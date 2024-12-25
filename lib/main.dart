@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:solve_hub/presentation/pages/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,14 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Solve Hub',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Solve Hub'),
-        ),
-        body: const Text('this is body of scaffold'),
-      ),
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
     );
   }
 }
